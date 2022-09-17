@@ -1,7 +1,7 @@
 # ChallengeFinal_KellySilva_Compass
 Repositório criado para Sprint 5
 
-# `Overview da Sprint 5`
+# `Overview`
 
 
 1. Configurações inciais
