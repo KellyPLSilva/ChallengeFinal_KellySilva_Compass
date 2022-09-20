@@ -1,14 +1,15 @@
 /// <reference types="cypress" />
 
+import Serverest from '../../services/serverest.service'
+import ValidaServerest from '../../services/validaServerest.service'
+
 describe('Casos de teste sobre a rota /usuarios da API Serverest', () => {
 
-  it('Deve buscar todos os usuários cadastrados na Serverest', () => {
-    cy.request('/usuarios').then( res => {
-        expect(res).to.be.a('object')
-        expect(res.body.quantidade).to.be.a('number')
-        expect(res.body.quantidade).to.be.greaterThan(0)
-       
-    })
+  it.only('Deve buscar todos os usuários cadastrados na Serverest', () => {
+   Serverest.buscarUsuarios().then( res => {
+    ValidaServerest.validarBuscarDeUsuarios(res)
+   })
+
   })
 
   it('Não deve postar um novo usuário administrador existente', () => {
@@ -26,7 +27,7 @@ describe('Casos de teste sobre a rota /usuarios da API Serverest', () => {
     })
   })
 
- it.only('Deve realizar login com sucesso', () => {
+ it('Deve realizar login com sucesso', () => {
   cy.buscarUsuarioParaLogin().then( usuario => {
     cy.logar(usuario.email, usuario.senha).then( res => {
       expect(res).to.be.a('object')
