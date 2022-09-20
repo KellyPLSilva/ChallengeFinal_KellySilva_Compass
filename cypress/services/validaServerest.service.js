@@ -11,4 +11,11 @@ static validarBuscarDeUsuarios(resposta){
            
 }
 
+static validarLoginComSucesso(resposta){
+    expect(resposta).to.be.a('object')
+    expect(resposta.body.message).to.be.a('string')
+    expect(resposta.body).to.haveOwnProperty('authorization')
 }
+
+}
+
