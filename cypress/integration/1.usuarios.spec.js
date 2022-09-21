@@ -7,9 +7,12 @@ import ValidaServerest from '../services/validaServerest.service'
 
 describe('Casos de teste sobre a rota /usuarios da API Serverest', () => {
 
-  it('Deve buscar todos os usuários cadastrados na Serverest', () => {
+  it.only('Deve buscar todos os usuários cadastrados na Serverest', () => {
    Serverest.buscarUsuarios().then( res => {
-    ValidaServerest.validarBuscarDeUsuarios(res)
+    cy.log('Sera validado o contrato')
+  cy.contractValidation(res, 'get-usuarios', 200)
+    
+   // ValidaServerest.validarBuscarDeUsuarios(res)
    })
   })
 
@@ -33,7 +36,7 @@ describe('Casos de teste sobre a rota /usuarios da API Serverest', () => {
  })
 
 
- it.only('Deve buscar e salvar um usuário de um arquivo json', () => {
+ it('Deve buscar e salvar um usuário de um arquivo json', () => {
  // let inteiro = Factory.gerarInteiroAleatorio()
    Serverest.buscarUsuarios().then( res => {
      cy.writeFile('./cypress/fixtures/usuario.json', res.body.usuarios[1])
@@ -41,7 +44,7 @@ describe('Casos de teste sobre a rota /usuarios da API Serverest', () => {
    })
 })
 
- it.only('Deve buscar o usuário de um arquivo json', () => {
+ it('Deve buscar o usuário de um arquivo json', () => {
      cy.fixture('usuario.json').then( json => {
       let usuario = {
         email: json.email,

@@ -23,6 +23,7 @@
   "homepage": "https://github.com/KellyPLSilva/ChallengeFinal_KellySilva_Compass#readme",
   "devDependencies": {
     "@faker-js/faker": "github:faker-js/faker",
+    "ajv": "^8.11.0",
     "cypress": "^9.7.0"
   }
 }

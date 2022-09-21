@@ -5,7 +5,7 @@ Repositório criado para Sprint 5
 
 
 # API ServeRest
-[![Badge ServeRest](https://img.shields.io/badge/API-ServeRest-green)](https://serverest.dev )
+[![Badge ServeRest](https://img.shields.io/badge/API-ServeRest-green)](https://github.com/KellyPLSilva/ChallengeFinal_KellySilva_Compass)
  
  ## Serverest:
 É um servidor REST que simula uma loja virtual com intuito de servir de material de estudos de testes de API. 
