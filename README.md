@@ -1,7 +1,27 @@
 # ChallengeFinal_KellySilva_Compass
 Repositório criado para Sprint 5
 
-# `Overview`
+
+
+
+# API ServeRest
+[![Badge ServeRest](https://img.shields.io/badge/API-ServeRest-green)](https://serverest.dev )
+ 
+ ## Serverest:
+É um servidor REST que simula uma loja virtual com intuito de servir de material de estudos de testes de API. 
+
+Possível acessar a documentação e as rotas disponíveis acessando  https://serverest.dev 
+
+## Cenários de Testes automatizados
+
+### Produtos 
+
+### Usuários 
+
+
+
+
+## Overview Sprint 5
 
 
 1. Configurações inciais
@@ -18,16 +38,12 @@ Repositório criado para Sprint 5
 
 7. Teste de contrato com Json Schema e AJV
 
-8. Report da automação
+8. Report da automação.
 
 
-# API ServeRest
-[![Badge ServeRest](https://img.shields.io/badge/API-ServeRest-green)](https://github.com/KellyPLSilva/ChallengeFinal_KellySilva_Compass/)
-
-É possível acessar a documentação e as rotas disponíveis acessando  https://serverest.dev 
+## Referência
 
 
-### Mapa Mental 
+[LogicalForest - Compass](https://compasso.sharepoint.com/sites/qa/pb/logicalforest/SitePages/Sprint-5.aspx)
 
-![img]()
-
+[GitHub - PauloGoncalvesBH ](https://github.com/ServeRest)

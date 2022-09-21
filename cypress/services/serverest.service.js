@@ -39,24 +39,25 @@ static buscarProdutos(){
     return cy.rest('GET', URL_PRODUTOS)
 }
 
-static cadastrarProdutoComSucesso(resposta){
-    cy.log(Cypress.env("bearer"))
-    return crypto.request({
-    method: 'POST',
-    url:  URL_PRODUTOS,
-    failOnStatusCode: false,   
-    headers: {
-        authorization: Cypress.env("bearer")
-    },
-    body: {
-        "nome": "Logitech MV Horizontal",
-        "preco": 350,
-        "descricao": "Carro",
-        "quantidade": 7
+static cadastrarProdutoComSucesso(){
+    return cy.request({
+        method: 'POST',
+        url:  URL_PRODUTOS,
+        body: {
+            "nome": "C4 MV Horizontal",
+            "preco": 47,
+            "descricao": "Mouse",
+            "quantidade": 381
+    
+        },
+        failOnStatusCode: true, 
+        auth: {
+            bearer: Cypress.env("bearer"),
 
-    }
-        
+        }
+
+
     })
-
 }
+
 }
