@@ -11,6 +11,9 @@ export default class Factory {
         }
 
     }        
+    static gerarInteiroAleatorio(){
+        return faker.datatype.number(5)
+    }
    
 
         }

@@ -1,6 +1,7 @@
 {
-    "nome" : "Joao de Barro da Silva",
-    "email" : "Kailey_OKeefe@gmail.com",
-    "administrador" : "true",
-    "_id" : "6gBX30nh5m071cPm"
+  "nome": "akon",
+  "email": "akon@teste.com.br",
+  "password": "12345",
+  "administrador": "false",
+  "_id": "3KTN6fglNzkmnG8V"
 }
