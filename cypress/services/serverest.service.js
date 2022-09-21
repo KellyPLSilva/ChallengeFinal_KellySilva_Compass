@@ -40,16 +40,12 @@ static buscarProdutos(){
 }
 
 static cadastrarProdutoComSucesso(){
+    let produto = Factory.gerarProduto()
+
     return cy.request({
         method: 'POST',
         url:  URL_PRODUTOS,
-        body: {
-            "nome": "C4 MV Horizontal",
-            "preco": 47,
-            "descricao": "Mouse",
-            "quantidade": 381
-    
-        },
+        body: produto, 
         failOnStatusCode: true, 
         auth: {
             bearer: Cypress.env("bearer"),

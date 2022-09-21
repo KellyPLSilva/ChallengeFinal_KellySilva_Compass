@@ -29,5 +29,11 @@ describe('Casos de teste sobre a rota /usuarios da API Serverest', () => {
   })
   })
  })
+ it.only('Deve buscar o usuário de um arquivo json', () => {
+     cy.fixture('usuario.json').then( json => {
+      cy.log(JSON.stringify(json))
+
+ })
 }) 
+})
     
