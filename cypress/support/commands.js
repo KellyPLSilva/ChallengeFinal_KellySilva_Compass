@@ -24,7 +24,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import Ajv from 'ajv'
 
-const ajv = new Ajv({allErrors: true, verbose:  true: strict: false})
+//const ajv = new Ajv({allErrors: verbose:true  true: strict: false})
 
 Cypress.Commands.add('contractValidation', (res, schema, status) =>{
     cy.log('Validando contrato para ' + schema + 'com status' + status)
@@ -32,7 +32,7 @@ Cypress.Commands.add('contractValidation', (res, schema, status) =>{
         const validate = ajv.compile(schema)
         const valid = validate(res.body)
 
-       cy.log{JSON.stringify(validate.erros)}
+      // cy.log{JSON.stringify(validate.erros)}
         if(!valid){
             var erros = ''
             for(let each in validate.errors){
@@ -43,7 +43,7 @@ Cypress.Commands.add('contractValidation', (res, schema, status) =>{
         }
   
     })
-    return true
+    return true 
 
 })
 

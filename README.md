@@ -1,16 +1,55 @@
 # ChallengeFinal_KellySilva_Compass
+<p align= "center">
 Repositório criado para Sprint 5
 
-
-
-
-# API ServeRest
-[![Badge ServeRest](https://img.shields.io/badge/API-ServeRest-green)](https://github.com/KellyPLSilva/ChallengeFinal_KellySilva_Compass)
+<p align="center">
+   <img src="" />
+</p>
  
- ## Serverest:
+***
+Introdução :
+=================
+
+Projeto Logical Forest programa de bolsas da empresa Compass UOL,  proprõe desenvolvimento e aprofundamento de conhecimentos em Cypress. 
+
+  
+  
+## Automação de Testes com Cypress:
+
+Nessa challenge final iremos realizar o planejamento, análise e criação de um projeto de automação de testes aplicando todo contéudo estudado nas outras Sprints.
+  
+  Foi escolhido para ser estudado e analisado uma API REST, chamada: 
+
+
+ ## Serverest
+ [![Badge ServeRest](https://img.shields.io/badge/API-ServeRest-green)](https://github.com/KellyPLSilva/ChallengeFinal_KellySilva_Compass)
+
 É um servidor REST que simula uma loja virtual com intuito de servir de material de estudos de testes de API. 
 
 Possível acessar a documentação e as rotas disponíveis acessando  https://serverest.dev 
+
+##Ferramentas utilizadas:
+
+
+
+<p align="center">
+  <a href="https://on.cypress.io">Documentation</a> |
+  <a href="https://on.cypress.io/changelog">Changelog</a> |
+  <a href="https://on.cypress.io/roadmap">Roadmap</a>
+</p>
+
+*Visual Studio
+*Cypress
+
+[![npm version](https://badge.fury.io/js/cypress.svg)](https://badge.fury.io/js/cypress)
+
+Intruções para instalação Cypress para Mac, Linux, or Windows, logo:    [iniciar](https://on.cypress.io/install).
+
+```bash
+npm install cypress --save-dev
+```
+
+
 
 ## Cenários de Testes automatizados
 
